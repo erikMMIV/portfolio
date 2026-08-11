@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balance — Case Study — Yurii Vitiuk</title>
+  <meta name="description" content="Case study: Balance — Premium SaaS financial dashboard. Linear/Stripe/Vercel caliber design system.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__name">Yurii Vitiuk</a>
+      <nav class="header__nav">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="cs-hero">
+    <div class="container container--narrow">
+      <a href="index.html" class="cs-hero__back">← Back to Work</a>
+      <p class="cs-hero__label">Case Study 02</p>
+      <h1 class="cs-hero__title">Balance</h1>
+      <p class="cs-hero__subtitle">Premium SaaS financial dashboard for small business. Visual discipline at the level of Linear, Stripe, and Vercel — warm-paper backdrop, one petrol-teal accent, tabular ledgers. Zero chart noise.</p>
+      <dl class="cs-hero__meta">
+        <div><dt>Category</dt><dd>SaaS / Fintech</dd></div>
+        <div><dt>Role</dt><dd>UX/UI Designer, Design System Architect</dd></div>
+        <div><dt>Pipeline</dt><dd>9 stages, 7 screens</dd></div>
+        <div><dt>Verdict</dt><dd>GO</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container container--narrow">
+      <h2 class="cs-section__title">The Challenge</h2>
+      <div class="cs-body">
+        <p>Small business owners need financial clarity, not financial complexity. Most accounting tools overwhelm with charts, graphs, and jargon. Balance takes the opposite approach: one number, one answer, one moment of calm.</p>
+        <p>The challenge was to build a financial dashboard that feels authored — not template-generated — while maintaining the trust that money management demands. Every design decision had to pass the "did anyone LOOK at the pixels" test.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container container--narrow">
+      <h2 class="cs-section__title">Design Philosophy</h2>
+      <div class="cs-body">
+        <h3>Read-First Contract</h3>
+        <p>Every screen is designed to be read, not decoded. The Dashboard shows one number — your cash position — with zero navigation required to get the answer. No charts. No bars. No visual noise. Just the answer.</p>
+        <h3>One Accent, Maximum Restraint</h3>
+        <p>The entire palette is built on warmth: a paper backdrop (#F7F6F2), ink-black text, and exactly one petrol-teal accent for CTAs and interactive elements. The cash hero stays in ink — accent restraint on the most visible number is the right call.</p>
+        <h3>Tabular Ledgers, Not Charts</h3>
+        <p>Financial data is presented in clean, tabular format with tabular numerals. Numbers align. Columns breathe. The "Money kept" figure in Reports is the single hero — not a pie chart, not a bar graph. One number that matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container container--narrow">
+      <h2 class="cs-section__title">The Pipeline</h2>
+      <div class="cs-body">
+        <p>Nine stages, each with documented decisions and critique gates:</p>
+        <ol>
+          <li><strong>Research</strong> — Competitive analysis of 12+ fintech dashboards</li>
+          <li><strong>Strategy</strong> — "Honesty as the feature" — trust through transparency</li>
+          <li><strong>Information Architecture</strong> — 5-root navigation, depth ≤3</li>
+          <li><strong>User Flows</strong> — Onboarding, dashboard, transactions, reports, settings</li>
+          <li><strong>UI Design</strong> — 7 screens with full state coverage (empty/loading/error/partial/success)</li>
+          <li><strong>Design System</strong> — 17 components, 7-step type scale, 8-point spacing</li>
+          <li><strong>Visual Polish</strong> — Pixel-level refinements, 1px grid discipline</li>
+          <li><strong>Accessibility Audit</strong> — WCAG 2.2 AA with 2 Critical + 8 High findings</li>
+          <li><strong>Design Critique</strong> — Zero-tolerance senior review, GO with 5 must-fix items</li>
+        </ol>
+      </div>
+      <div class="cs-stats">
+        <dl class="cs-stats__item"><dt>7</dt><dd>Screens</dd></dl>
+        <dl class="cs-stats__item"><dt>17</dt><dd>Components</dd></dl>
+        <dl class="cs-stats__item"><dt>1</dt><dd>Font Family</dd></dl>
+        <dl class="cs-stats__item"><dt>0</dt><dd>Dependencies</dd></dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container container--narrow">
+      <h2 class="cs-section__title">Premium Bar</h2>
+      <div class="cs-body">
+        <p>The critique verdict: <strong>"Linear/Stripe/Vercel caliber."</strong></p>
+        <p>The composition uses hierarchy pyramid, whitespace guarded above money, purposeful asymmetry, and tone-ruled discipline. The biggest differentiator is the absence — no chart, no bar of bars — restraint as the product shape.</p>
+        <p>Five must-fix items before final GO: muted-text AA contrast, warning-text AA on trust UI, interactive border contrast, currency consistency (one locale, no mixed £/$), and accessibility-behavior contracts for modals and keyboard navigation. All bounded, named-token changes — no redesign required.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container container--narrow">
+      <h2 class="cs-section__title">Technical Achievement</h2>
+      <div class="cs-body">
+        <p>The entire system uses system font stacks (no @font-face, no CDN), inline SVG (~4 icons), CSS custom tokens, and <code>prefers-reduced-motion</code>. Hand-buildable with zero dependencies, one stylesheet. No npm. No webfont block.</p>
+        <p>For a finance product, this is the correct call: fast load, zero external requests, full offline capability. The design system is production-ready as pure HTML/CSS.</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="cs-nav">
+    <a href="vprytul.html">
+      <p class="cs-nav__label">Previous</p>
+      <p class="cs-nav__title">VPRITUL</p>
+    </a>
+    <a href="iwasborninukraine.html">
+      <p class="cs-nav__label">Next</p>
+      <p class="cs-nav__title">iwasborninukraine</p>
+    </a>
+  </nav>
+
+  <footer class="footer">
+    <div class="container"><p>© 2026 Yurii Vitiuk</p></div>
+  </footer>
+
+</body>
+</html>
